@@ -25,7 +25,7 @@
     function addProductCart(produit){               
         //preparer le panier 
         let panier = getPanier();
-            console.log ("panier"+panier);
+            // console.log ("panier"+panier);
         // je demarre avec un panier vide 
         let productExist = false;
 
@@ -135,9 +135,10 @@ const productDisplay = async () => {
                         quantity: quantity,
                         
                     };
-                    console.log("selectedProduct"+selectedProduct)
+                    // console.log("selectedProduct"+selectedProduct)
                     // Ajouter dans le panier 
                     let newPanier = addProductCart(selectedProduct);
+                        console.log (newPanier);
                     // Sauvegarde du panier
                     setPanier(newPanier);
                     let confirm = alert ("Votre article a bien été ajouté à votre panier.")
